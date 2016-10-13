@@ -2,8 +2,6 @@
 <html>
 	<head>
 		<link rel="stylesheet" tyep="text/css" href="Tour.css">
-		<link rel="stylesheet" 
-		href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
 		<title>Braden's World Tour</title>
 		
 
@@ -39,7 +37,7 @@
 
 
 <script>
-function initialize() {
+function myMap() {
   var mapProp = {
     center:new google.maps.LatLng(40.7826905,-73.9680585),
     zoom:13,
@@ -136,7 +134,7 @@ function initialize() {
   var map11=new google.maps.Map(document.getElementById("googleMap11"),mapProp11);
    
 }
-google.maps.event.addDomListener(window, 'load', initialize);
+google.maps.event.addDomListener(window, 'load', myMap);
 </script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBthamrfY4svGrZfl8XPsvK9eXRlPwtbcg&callback=myMap"
     async defer></script>
