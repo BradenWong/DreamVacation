@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" tyep="text/css" href="Tour.css">
+		<link rel="stylesheet" 
+		href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+		<title>Braden's World Tour</title>
+		
+
+</head>
+
+	</head>
+	<body>
+		<ul id="NavBar">
+  			<li class="NavItem"><a href="TourIndex.html">My Route</a></li>
+  			<li class="NavItem"><a class="Active" href="Zooom.html">Zoomed in Map</a></li>
+   			<li class="NavItem"><a href="Africa.html">Africa</a></li>
+   			<li class="NavItem"><a href="Asia.html">Asia</a></li>
+   			<li class="NavItem"><a href="Europe.html">Europe</a></li>
+   			<li class="NavItem"><a href="NorthAmerica.html">North America</a></li>
+   			<li class="NavItem"><a href="Australia.html">Australia</a></li>
+			</div>
+ 			</li> 			
+		</ul>
+	<h1 id="title">
+		Zoomed In Maps
+	</h1>
+<div id="googleMap" style="width:80%;height:380px;margin-left:auto;margin-right:auto;"></div>
+<div id="googleMap2" style="width:80%;height:380px;margin-left:auto;margin-right:auto;"></div>
+<div id="googleMap3" style="width:80%;height:380px;margin-left:auto;margin-right:auto;"></div>
+<div id="googleMap4" style="width:80%;height:380px;margin-left:auto;margin-right:auto;"></div>
+<div id="googleMap5" style="width:80%;height:380px;margin-left:auto;margin-right:auto;"></div>
+<div id="googleMap6" style="width:80%;height:380px;margin-left:auto;margin-right:auto;"></div>
+<div id="googleMap7" style="width:80%;height:380px;margin-left:auto;margin-right:auto;"></div>
+<div id="googleMap8" style="width:80%;height:380px;margin-left:auto;margin-right:auto;"></div>
+<div id="googleMap9" style="width:80%;height:380px;margin-left:auto;margin-right:auto;"></div>
+<div id="googleMap10" style="width:80%;height:380px;margin-left:auto;margin-right:auto;"></div>
+<div id="googleMap11" style="width:80%;height:380px;margin-left:auto;margin-right:auto;"></div>
+
+
+
+	<script src="http://maps.googleapis.com/maps/api/js"></script>
+<script>
+function initialize() {
+  var mapProp = {
+    center:new google.maps.LatLng(40.7826905,-73.9680585),
+    zoom:13,
+    mapTypeId:google.maps.MapTypeId.HYBRID,
+
+  };
+  var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+  
+  var mapProp2 = {
+    center:new google.maps.LatLng(51.503324,-0.1217317),
+    zoom:13,
+    mapTypeId:google.maps.MapTypeId.HYBRID,
+
+  };
+  var map2=new google.maps.Map(document.getElementById("googleMap2"),mapProp2);
+  
+    var mapProp3 = {
+    center:new google.maps.LatLng(41.3841666,2.1730443),
+    zoom:13,
+    mapTypeId:google.maps.MapTypeId.HYBRID,
+
+  };
+  var map3=new google.maps.Map(document.getElementById("googleMap3"),mapProp3);
+
+  var mapProp4 = {
+    center:new google.maps.LatLng(48.8583701,2.2922873),
+    zoom:13,
+    mapTypeId:google.maps.MapTypeId.HYBRID,
+
+  };
+  var map4=new google.maps.Map(document.getElementById("googleMap4"),mapProp4);
+
+  var mapProp5 = {
+    center:new google.maps.LatLng(48.2187997,11.6225132),
+    zoom:13,
+    mapTypeId:google.maps.MapTypeId.HYBRID,
+
+  };
+  var map5=new google.maps.Map(document.getElementById("googleMap5"),mapProp5);
+
+  var mapProp6 = {
+    center:new google.maps.LatLng(30.0444,31.2357),
+    zoom:13,
+    mapTypeId:google.maps.MapTypeId.HYBRID,
+
+  };
+  var map6=new google.maps.Map(document.getElementById("googleMap6"),mapProp6);
+  
+   var mapProp7 = {
+    center:new google.maps.LatLng(36.4072716,25.3505912),
+    zoom:13,
+    mapTypeId:google.maps.MapTypeId.HYBRID,
+
+  };
+  var map7=new google.maps.Map(document.getElementById("googleMap7"),mapProp7);
+  
+    var mapProp8 = {
+    center:new google.maps.LatLng(-33.8479269,150.7918919),
+    zoom:13,
+    mapTypeId:google.maps.MapTypeId.HYBRID,
+
+  };
+  var map8=new google.maps.Map(document.getElementById("googleMap8"),mapProp8);
+    var mapProp6 = {
+    center:new google.maps.LatLng(35.6735408,139.5703052),
+    zoom:13,
+    mapTypeId:google.maps.MapTypeId.HYBRID,
+
+  };
+  var map8=new google.maps.Map(document.getElementById("googleMap8"),mapProp8);
+  
+    var mapProp9 = {
+    center:new google.maps.LatLng(35.6691084,139.6009541),
+    zoom:13,
+    mapTypeId:google.maps.MapTypeId.HYBRID,
+
+  };
+  var map9=new google.maps.Map(document.getElementById("googleMap9"),mapProp9);
+  
+    var mapProp10 = {
+    center:new google.maps.LatLng(58.4337033,-134.5560453),
+    zoom:12,
+    mapTypeId:google.maps.MapTypeId.HYBRID,
+
+  };
+  var map10=new google.maps.Map(document.getElementById("googleMap10"),mapProp10);
+  
+    var mapProp11 = {
+    center:new google.maps.LatLng(20.6841654,-156.4428968),
+    zoom:13,
+    mapTypeId:google.maps.MapTypeId.HYBRID,
+
+  };
+  var map11=new google.maps.Map(document.getElementById("googleMap11"),mapProp11);
+   
+}
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+
+	</body>
+</html>
